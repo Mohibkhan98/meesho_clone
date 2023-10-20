@@ -1,60 +1,232 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.head_container{
-    width: 100%;
+.head_container {
+  width: 100%;
 }
-.heroSection{
-width: 100%;
-height: 600px;
-display: flex;
-justify-content: center;
+.heroSection {
+  width: 100%;
+  height: 365px;
+  display: flex;
+  justify-content: center;
 }
 .centered-heading {
-    display: flex;
-    align-items: center;
-    margin-top: -220px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
 }
 
-.centered-heading h1 {
-    font-size: 40px; 
-    margin-left: 12%;
-    font-style: normal;
-    font-family: sans-serif;
-    font-weight: bold;
+.line-left,
+.line-right {
+  flex: 1;
+  border-top: 1px solid rgb(100, 100, 128);
+  margin: 0 10px;
 }
-.centered-heading h1 > span{
-    color:palevioletred;
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 /* store section */
 
-.store{
-    background-image: url('https://images.meesho.com/images/marketing/1678691670429_1200.webp');
-    height: 550px;
-    width: 81%;
-    margin-left: 9.5%;
-   
+.store {
+  background-image: url("https://images.meesho.com/images/marketing/1678691670429_1200.webp");
+  height: 550px;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 15px;
 }
-.store_sections{
+.store_sections {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-left: 22px;
+  column-gap: 10px;
+}
+.sec_1 {
+  height: 429px;
+  width: 400px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.sec_2,
+.sec_3 {
+  height: 291px;
+  width: 312px;
+  margin-left: 20px;
+}
+.sec_1 a > img {
+  height: 100%;
+}
+
+/* Essentials */
+
+.essentials {
+  display: flex;
+  background-image: url("https://images.meesho.com/images/marketing/1678691743015_1200.webp");
+  height: 550px;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 40px;
+}
+.imagesBox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 700px;
+  gap: 15px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.img1,
+.img2,
+.img3 {
+  height: 328px;
+  width: 200px;
+}
+.btn1,
+.btn2,
+.btn3 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  height: 100px;
+  width: 200px;
+  margin-top: 22%;
+  margin-left: 10%;
+}
+.btn button {
+  height: 60px;
+  width: 150px;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn1 button {
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+.btn2 button {
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+.btn3 button {
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* New Styles */
+
+/* .newStyles {
     display: flex;
-    align-items: flex-end;
-    margin-top:30px;
-    margin-left: 22px;
-    column-gap: 10px;
-}
-.sec_1{
-    /* border: 1px solid green; */
-    height:429px ;
-    width: 400px;
-    border-radius: 10px;
-    margin-top: 100px;
-}
-.sec_2, .sec_3{
-    /* border: 1px solid green; */
-    height:291px ;
-    width: 312px;
-}
-.sec_1 a > img{
-    height: 100%;
-}
+    background-image: url("https://images.meesho.com/images/marketing/1678691743015_1200.webp");
+    height: 550px;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 40px;
+  }
+  .images_Box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 700px;
+    gap: 15px;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .img_1,
+  .img_2,
+  .img_3 {
+    height: 328px;
+    width: 200px;
+  }
+  .btn_1,
+  .btn_2,
+  .btn_3 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .btnNew {
+    height: 100px;
+    width: 200px;
+    margin-top: 22%;
+    margin-left: 10%;
+  }
+  .btnNew button {
+    height: 60px;
+    width: 150px;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn_1 button {
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+  .btn_2 button {
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+  .btn_3 button {
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+  a {
+    text-decoration: none;
+  } */
+  
