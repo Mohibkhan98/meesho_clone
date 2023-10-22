@@ -1,0 +1,130 @@
+/* Features */
+.main_container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+#heading {
+  /* border: 1px solid red; */
+  height: 75px;
+  width: 100%;
+}
+h3 {
+  margin-left: 10px;
+  display: inline-block;
+}
+.feature {
+  /* border: 2px solid red; */
+  width: 328px;
+  height: 1000px;
+  display: inline-block;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Sortfeatures {
+  /* border: 2px solid red; */
+  height: 40px;
+  width: 300px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/* filter */
+
+.filter {
+  border: 1px solid gray;
+  border-right: none;
+  border-left: none;
+  display: inline-block;
+  height: 100%;
+  width: 300px;
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+.filter-heading {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.filter-heading h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.filter-heading h6 {
+  font-size: small;
+  font-weight: light;
+  margin-left: 10px;
+}
+
+/* category */
+.category-dropdown {
+  display: block;
+  position: relative;
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 50px;
+  margin-top: -292%;
+  margin-left: 10px;
+}
+#category {
+  height: 40px;
+  width: 300px;
+  /* margin-left: 10px; */
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+/* price */
+
+.price {
+  display: block;
+  position: relative;
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#price-sort {
+  height: 40px;
+  width: 300px;
+  /* margin-left: 10px; */
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+/* Gender */
+
+.gender {
+  display: block;
+  position: relative;
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#gendertype {
+  height: 40px;
+  width: 300px;
+  /* margin-left: 10px; */
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.products {
+  border: 1px solid crimson;
+  height: 800px;
+  width: 80%;
+  margin: 20px;
+  margin-top: 0px;
+}

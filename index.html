@@ -1,119 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="./styles/index.css">
-   
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+  <body>
 
-  <!-- HERO SECTION -->
-  <div class="head_container">
-
-    <section class="heroSection">
-        <div class="heroText">
-            <img src="./images/heroImg.png" alt="">
-        </div> 
+     <!-- Navigation Bar -->
+     <section class="navbar">
+      <div class="uppernav">
+        <a href="index.html"><img
+          src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png"
+          alt="logo"
+          class="logo"
+        /></a>
+        <div class="navSearch">
+          <img
+            src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png"
+            alt="search"
+            class="NavSearchIcon"
+          />
+          <input
+            type="text"
+            id="keyword"
+            class="searchContainer"
+            placeholder="Try Saree,Kurti or Seach by Product Code"
+            onkeypress="handleKeyPress(event)"
+          />
+        </div>
+        <div class="navRightSec">
+          <div class="navAppPromo">
+            <img
+              src="https://i.postimg.cc/sXqr2Fz4/smartphone.png"
+              alt="app"
+              class="navAppIcon"
+            />
+            <span id="tagDwn">Download App</span>
+          </div>
+          <span class="navSuplier">Become a Supplier</span>
+          <span class="navSuplier">News Room</span>
+          <div class="navProfile" onclick="window.location.href='SignUpPage.html'">
+            <img
+              src="https://i.postimg.cc/wjtLkcVz/user.png"
+              alt="account"
+              class="navAccountIcon"
+            />
+            <span
+              class="SignUpHover"
+              >Profile</span
+            >
+          </div>
+          <div class="navcart" onclick="window.location.href='CartPage.html'">
+            <img
+              src="https://i.postimg.cc/sXBgkwMf/bag.png"
+              alt="cart"
+              class="cartIcon"
+            />
+            <span
+              class="SignUpHover"
+              onclick="window.location.href='CartPage.html'"
+              >Cart</span
+            >
+          </div>
+          <div id="cart-item-counter">0</div>
+        </div>
+      </div>
+      <div class="bottomNav">
+        <div class="nav-menu">
+          <ul>
+            <li class="dropdown" onclick="window.location.href='viewall.html'">View All</li>
+            <li class="dropdown" onclick="window.location.href='WomenWestern.html'">Women Western
+              <div class="submenu">
+                <div class="subCat">
+                  <span class="catHeading">Topwear</span>
+                  <span>Dresses</span>
+                  <span>Tops</span>
+                  <span>Sweaters</span>
+                  <span>Jumpsuits</span>
+                </div>
+                <div class="subCat" style="margin-left: 1em;">
+                  <span class="catHeading">Bottomwear</span>
+                  <span>Jeans</span>
+                  <span>Jeggings</span>
+                  <span>Palazzos</span>
+                  <span>Shorts</span>
+                  <span>Skirts</span>
+                </div>
+              </div>
+            </li>
+            <li onclick="window.location.href='Jewellery.html'">Jewellery & Accessories</li>
+            <li onclick="window.location.href='Men.html'">Men</li>
+            <li>Beauty & Health</li>
+            <li>Bath & Body</li>
+            <li>Bags & Footwear</li>
+            <li>Home & Kitchen</li>
+            <li>Kids</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <div>
+    <!-- HERO SECTION -->
+    <div class="head_container">
+      <section class="heroSection">
+        <div class="heroText">
+          <img src="./images/heroImg.png" alt="" />
+        </div>
+      </section>
+
+      <div>
         <div class="centered-heading">
-            <div class="line-left"></div>
-            <h1>Top Categories to Choose From</h1>
-            <div class="line-right"></div>
+          <div class="line-left"></div>
+          <h1>Top Categories to Choose From</h1>
+          <div class="line-right"></div>
         </div>
-    </div>
+      </div>
 
-    <!-- STORE SECTION -->
+      <!-- STORE SECTION -->
 
-    <div class="store">
+      <div class="store">
         <div class="store_sections">
-            <div class="sec_1">
-                <a href="">
-                    <img src="https://images.meesho.com/images/marketing/1692190996099_400.webp" alt="">
-                </a>
-            </div>
-            <div class="sec_2">
-                <a href="">
-                    <img src="https://images.meesho.com/images/marketing/1678691699680_300.webp" alt="">
-                </a>
-            </div>
-            <div class="sec_3">
-                <a href="">
-                    <img src="https://images.meesho.com/images/marketing/1678691712594_300.webp" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- ESSENTIALS -->
-
-    <div class="essentials">
-        <div class="btn">
-            <button>View All</button>
-        </div>
-     <div class="imagesBox">
-
-        <div class="img1">
-            <a href=""> <img src="https://images.meesho.com/images/marketing/1678691846068_200.webp" alt="">
-            <div class="btn1">
-                <button>Home Decore</button>
-            </div>
-        </a>
-        </div>
-
-        <div class="img2">
-            <a href=""><img src="https://images.meesho.com/images/marketing/1678691832099_200.webp" alt="">
-            <div class="btn2">
-                <button>Kitchen Appliances</button>
-            </div></a>
-        </div>
-
-        <div class="img3">
-            <a href="">
-                <img src="https://images.meesho.com/images/marketing/1678691796046_200.webp" alt="">
-            
-            <div class="btn3">
-                <button>Health Care</button>
-            </div></a>
-        </div>
-
-     </div>
-     
-        <!-- New Styles -->
-
-        <!-- <div class="newStyles">
-            <div class="btnNew">
-                <button>View All</button>
-            </div>
-         <div class="images_Box">
-    
-            <div class="img_1">
-                <a href=""> <img src="https://images.meesho.com/images/marketing/1678691960553_200.webp" alt="">
-                <div class="btn_1">
-                    <button>Accessories</button>
-                </div>
+          <div class="sec_1">
+            <a href="womenStore.html">
+              <img
+                src="https://images.meesho.com/images/marketing/1692190996099_400.webp"
+                alt=""
+              />
             </a>
-            </div>
-    
-            <div class="img_2">
-                <a href=""><img src="https://images.meesho.com/images/marketing/1678691936892_200.webp" alt="">
-                <div class="btn_2">
-                    <button>Footwear</button>
-                </div></a>
-            </div>
-    
-            <div class="img_3">
-                <a href="">
-                    <img src="https://images.meesho.com/images/marketing/1678691925419_200.webp" alt="">
-                
-                <div class="btn_3">
-                    <button>Electronics</button>
-                </div></a>
-            </div>
-    
-         </div> -->
-  </div>
-</body>
+          </div>
+          <div class="sec_2">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691699680_300.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="sec_3">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691712594_300.webp"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ESSENTIALS -->
+
+      <div class="essentials">
+        <div class="btn">
+          <button>View All</button>
+        </div>
+        <div class="imagesBox">
+          <div class="img1">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691846068_200.webp"
+                alt=""
+              />
+              <div class="btn1">
+                <button>Home Decore</button>
+              </div>
+            </a>
+          </div>
+
+          <div class="img2">
+            <a href=""
+              ><img
+                src="https://images.meesho.com/images/marketing/1678691832099_200.webp"
+                alt=""
+              />
+              <div class="btn2">
+                <button>Kitchen Appliances</button>
+              </div></a
+            >
+          </div>
+
+          <div class="img3">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691796046_200.webp"
+                alt=""
+              />
+
+              <div class="btn3">
+                <button>Health Care</button>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- New Styles -->
+
+      <div class="newStyles">
+        <div class="btn">
+          <button>View All</button>
+        </div>
+        <div class="imagesBox">
+          <div class="img1">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691960553_200.webp"
+                alt=""
+              />
+              <div class="btn1">
+                <button>Accessories</button>
+              </div>
+            </a>
+          </div>
+
+          <div class="img2">
+            <a href=""
+              ><img
+                src="https://images.meesho.com/images/marketing/1678691936892_200.webp"
+                alt=""
+              />
+              <div class="btn2">
+                <button>Footwear</button>
+              </div></a
+            >
+          </div>
+
+          <div class="img3">
+            <a href="">
+              <img
+                src="https://images.meesho.com/images/marketing/1678691925419_200.webp"
+                alt=""
+              />
+
+              <div class="btn3">
+                <button>Electronics</button>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      
+    </div>
+  </body>
 </html>
